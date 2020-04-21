@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    .body{
+        min-height: 500px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .profil{
+        z-index; -1;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    div.media > a.overlay:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+    h1{
+        color: #d7d7d7;
+        font-size: 24px;
+        font-family: 'Bebas Neue', cursive;
+        margin-top: 8px;
+    }
+    h2{
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+        padding: 3px;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    i.fa-cog{
+        font-size:18px;
+        vertical-align: middle;
+        color: #d7d7d7;
+    }
+</style>
+
+    <div class="container body">
+        {{user.id}}<br/>
+        {{user.is_superuser}}<br/>
+        {{user.email}}<br/>
+        {{user.is_staff}}<br/>
+        <form>
+            <a href="#" class="overlay">dsfsdf</a>
+            <div class="media">
+              <a href="#" class="overlay">
+                  <img  class="profil" src="{% static 'img/profil.jpg' %}">
+              </a>
+              <div class="media-body">
+                <h1 style="padding: 28px;">{{user.username}} <i style="" class="fas fa-cog"></i></h1> <!-- A modifier -->
+              </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

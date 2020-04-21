@@ -1,0 +1,93 @@
+{% load static %}
+{% block navbar %}
+
+<style>
+    .custom{
+        width: 100%;
+        border-bottom: 2px solid black;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: #480000;
+    }
+    .logo{
+        border-bottom: 2px solid black;
+        object-fit: cover;
+        width: 100%;
+        height: 135.5px;
+    }
+    nav > span{
+        text-decoration: none;
+        color: #d7d7d7;
+        font-family: 'Bebas Neue', cursive;
+        margin-left: 75px;
+        font-size: 24px;
+        padding: 15px;
+        line-height: 36px;
+    }
+    nav > div > ul {
+        height: 68px;
+    }
+    nav > div > ul > li{
+        margin-left: 20px;
+    }
+    nav > div > ul > li:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+    nav > div > ul > li > a{
+        text-decoration: none;
+        color: #d7d7d7;
+        font-size: 18px;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-family: 'Bebas Neue', cursive;
+        margin-top: 15px;
+    }
+    nav > div > ul > li > a:hover{
+        text-decoration: none;
+        color: #d7d7d7;
+    }
+
+</style>
+<img class="logo" id="logo" src="{% static 'img/head.png' %}"/>
+<nav class="custom navbar-expand-lg">
+    <span style="float: left;">ACROSS ESPORT</span>
+    <div  style="float: left;">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="/team">Nos Équipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="/staff">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="/affiliate">Partenaires</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>-->
+          {% if user.is_staff %}
+          <li class="nav-item active">
+            <a class="nav-link" href="/admin">Administrer</a>
+          </li>
+          {% endif %}
+
+        </ul>
+    </div>
+    <div style="float: right;">
+        <ul class="navbar-nav">
+        {% if user.is_authenticated %}
+            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="/profil" style="margin-top:7.5px"><img style="width: 40px; height: 40px; border-radius: 50%; padding:0px;" src="{{user.picture}}" /></a></li>-->
+        {% else %}
+            <li class="nav-item"><a class="nav-link" href="{% url 'social:begin' 'google-oauth2' %}">Login</a></li>
+        {% endif %}
+        </ul>
+    </div>
+
+</nav>
+
+{% endblock %}

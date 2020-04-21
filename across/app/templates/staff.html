@@ -1,0 +1,331 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    .body{
+        min-height: calc(100vh - 205px - 143.5px);
+        padding-top: 20px;
+    }
+    h1{
+        color: #d7d7d7;
+        font-size: 24px;
+        font-family: 'Bebas Neue', cursive;
+        margin-top: 8px;
+    }
+
+    h2{
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+        padding: 3px;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .profil{
+        width: 140px;
+        border: 2px solid black;
+        background-color: #d7d7d7;
+        background: linear-gradient(110deg, #d7d7d7 60%, #A5AF9E 60%);
+        margin: 2.5px;
+        float: left;
+    }
+    hr{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+
+    .profil > img{
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+    }
+    .profil > p{
+        padding: 3px;
+        margin: 0px;
+    }
+    .profil > .networks{
+        margin: 3px;
+    }
+    .section{
+        overflow: hidden;
+    }
+    .vHead{
+        transform: rotate(90deg);
+        transform-origin: bottom left;
+        background-color: #480000;
+        height: 40px;
+        padding: 5px;
+        color: #d7d7d7;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .staffs{
+        margin-left: 50px;
+        overflow: auto;
+        float: left;
+    }
+</style>
+<div class="container body">
+    <div class="row">
+        <div class="section col-sm-6" >
+        <div class="vHead">
+            Présidents
+        </div>
+        <div class="staffs">
+            <div class="profil">
+                <img src="{% static 'img/profil.jpg' %}">
+
+                <h2 class="pseudo">Titancki</h2>
+                <hr/>
+                <p>Une description qui déboite!!!!!</p>
+                <hr/>
+                <div class="networks text-center">
+                    <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                    <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                    <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="profil">
+                <img src="{% static 'img/profil.jpg' %}">
+
+                <h2 class="pseudo">Titancki</h2>
+                <hr/>
+                <p>Une description qui déboite!!!!!</p>
+                <hr/>
+                <div class="networks text-center">
+                    <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                    <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                    <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="section col-sm-6">
+            <div class="vHead">
+                Community manager
+            </div>
+            <div class="staffs">
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section col-sm-6">
+            <div class="vHead">
+                Coach
+            </div>
+            <div class="staffs">
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="section col-sm-6">
+            <div class="vHead">
+                Manager
+            </div>
+            <div class="staffs">
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <img src="{% static 'img/profil.jpg' %}">
+
+                    <h2 class="pseudo">Titancki</h2>
+                    <hr/>
+                    <p>Une description qui déboite!!!!!</p>
+                    <hr/>
+                    <div class="networks text-center">
+                        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://discord.com"><i class="fab fa-discord"></i></a>
+                        <a href="http://twitch.tv"><i class="fab fa-twitch"></i></a>
+                        <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
