@@ -30,6 +30,8 @@ urlpatterns = [
     path('delete_game', views.delete_game, name="delete_game"),
     path('add_team', views.add_team, name="add_team"),
     path('delete_team', views.delete_team, name="delete_team"),
+    path('add_match', views.add_match, name="add_match"),
+    path('delete_match', views.delete_match, name="delete_match"),
     path('', views.index, name="index"),
     path('', include("social_django.urls", namespace="social")),
 ]

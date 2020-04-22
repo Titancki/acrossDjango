@@ -56,7 +56,7 @@
         display: none;
     }
     .table{
-        color: white;
+        color: grey;
     }
 </style>
 <div class="body row">
@@ -239,7 +239,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                                        <input type="text" class="form-control datetimepicker-input"name="dateMatch"  data-target="#datetimepicker1"/>
                                         <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                                             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                         </div>
@@ -262,9 +262,9 @@
                             {% for match in allMatch %}
                                 <tr>
                                     <td>{{match.team1.name}} - {{match.team2.name}}</td>
-                                    <td>{{match.score1.name}} - {{match.score2.name}</td>
+                                    <td>{{match.score1}} - {{match.score2}}</td>
                                     <td>{{match.game.name}}</td>
-                                    <td>{{match.date}}</td>
+                                    <td>{{match.date|date:'d-m-Y H:i'}}</td>
                                     <td><a href="/delete_match?matchPk={{match.pk}}"><i class="fas fa-trash"></i></a></td>
                                 </tr>
                             {% endfor %}
@@ -283,7 +283,9 @@
 
 <script type="text/javascript">
     $(function () {
-        $('#datetimepicker1').datetimepicker();
+        $('#datetimepicker1').datetimepicker({
+            format: 'DD-mm-YYYY HH:mm'
+        });
     });
 </script>
 <script>
