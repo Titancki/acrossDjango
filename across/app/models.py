@@ -25,7 +25,19 @@ class Profile(models.Model):
 
 class Game(models.Model):
     name = models.CharField(max_length=255, null=True)
-
+    def get_abname(self):
+        abname = ""
+        if self.name == "Overwatch":
+            abname = "ow"
+        elif self.name == "Tom Clancy's Rainbow Six Siege":
+            abname = "r6"
+        elif self.name == "League of Legend":
+            abname = "lol"
+        elif self.name == "Rocket League":
+            abname = "rl"
+        else:
+            abname = "default"
+        return abname
 class Team(models.Model):
     name = models.CharField(max_length=255, null=True)
     structure = models.CharField(max_length=255, null=True)

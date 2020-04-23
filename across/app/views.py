@@ -6,8 +6,9 @@ from app.models import Game, Team, MatchHistory
 import datetime
 
 def index(request):
+    lastMatchs = MatchHistory.objects.all().order_by('-date')[:5]
     context = {
-
+        "lastMatchs": lastMatchs
     }
     return render(request, "index.html", context)
 def team(request):
@@ -64,7 +65,6 @@ def add_game(request):
         print("error: Game was not created")
 
     return redirect('/admin')
-
 def delete_game(request):
 
     if request.GET.get('gamePk'):
@@ -85,7 +85,6 @@ def add_team(request):
         print("error: Team was not created")
 
     return redirect('/admin')
-
 def delete_team(request):
 
     if request.GET.get('teamPk'):

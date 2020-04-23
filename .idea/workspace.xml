@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf077ec7-e311-4186-84b9-f7167f775c04" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/across/across/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/across/across/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/across/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/across/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/across/app/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/across/app/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/across/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/across/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/across/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/across/app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/across/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/across/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,29 +20,31 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/across/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="104" column="77" selection-start-line="104" selection-start-column="77" selection-end-line="104" selection-end-column="93" />
+            <state relative-caret-position="170">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#189#257#0" />
                 <element signature="e#282#349#0" />
                 <element signature="e#375#443#0" />
                 <element signature="e#474#546#0" />
                 <element signature="e#572#741#0" />
                 <element signature="e#768#838#0" />
                 <element signature="e#870#958#0" />
+                <element signature="e#979#1126#0" />
                 <element signature="e#1147#1412#0" />
                 <element signature="e#1459#1732#0" />
+                <element signature="e#1642#1863#0" />
+                <element signature="e#1896#2099#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/across/app/templates/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="266" column="68" selection-start-line="266" selection-start-column="68" selection-end-line="266" selection-end-column="68" />
+            <state relative-caret-position="187">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -73,8 +73,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/across/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+            <state relative-caret-position="335">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -82,15 +82,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/across/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="255">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,7 +149,6 @@
         <option value="$PROJECT_DIR$/Lib/site-packages/django/contrib/staticfiles/storage.py" />
         <option value="$PROJECT_DIR$/across/app/templates/animation.html" />
         <option value="$PROJECT_DIR$/across/app/templates/contact.html" />
-        <option value="$PROJECT_DIR$/across/app/templates/index.html" />
         <option value="$PROJECT_DIR$/across/db.cnf" />
         <option value="$PROJECT_DIR$/pipeline.py" />
         <option value="$PROJECT_DIR$/across/app/models/Users.py" />
@@ -161,11 +162,12 @@
         <option value="$PROJECT_DIR$/across/app/templates/staff.html" />
         <option value="$PROJECT_DIR$/across/app/templates/footer.html" />
         <option value="$PROJECT_DIR$/across/app/templates/navbar.html" />
-        <option value="$PROJECT_DIR$/across/app/models.py" />
         <option value="$PROJECT_DIR$/across/app/templates/base.html" />
         <option value="$PROJECT_DIR$/across/across/urls.py" />
         <option value="$PROJECT_DIR$/across/app/views.py" />
+        <option value="$PROJECT_DIR$/across/app/models.py" />
         <option value="$PROJECT_DIR$/across/app/templates/admin.html" />
+        <option value="$PROJECT_DIR$/across/app/templates/index.html" />
       </list>
     </option>
   </component>
@@ -312,15 +314,17 @@
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#189#257#0" />
             <element signature="e#282#349#0" />
             <element signature="e#375#443#0" />
             <element signature="e#474#546#0" />
             <element signature="e#572#741#0" />
             <element signature="e#768#838#0" />
             <element signature="e#870#958#0" />
+            <element signature="e#979#1126#0" />
             <element signature="e#1147#1412#0" />
             <element signature="e#1459#1732#0" />
+            <element signature="e#1642#1863#0" />
+            <element signature="e#1896#2099#0" />
           </folding>
         </state>
       </provider>
@@ -378,6 +382,8 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -539,34 +545,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/across/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/across/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/across/across/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
             <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/across/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#282#349#0" />
+            <element signature="e#375#443#0" />
+            <element signature="e#474#546#0" />
+            <element signature="e#572#741#0" />
+            <element signature="e#768#838#0" />
+            <element signature="e#870#958#0" />
+            <element signature="e#979#1126#0" />
+            <element signature="e#1147#1412#0" />
+            <element signature="e#1459#1732#0" />
+            <element signature="e#1642#1863#0" />
+            <element signature="e#1896#2099#0" />
           </folding>
         </state>
       </provider>
@@ -585,31 +590,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/across/app/views.py">
+    <entry file="file://$PROJECT_DIR$/across/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
-          <caret line="104" column="77" selection-start-line="104" selection-start-column="77" selection-end-line="104" selection-end-column="93" />
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#189#257#0" />
-            <element signature="e#282#349#0" />
-            <element signature="e#375#443#0" />
-            <element signature="e#474#546#0" />
-            <element signature="e#572#741#0" />
-            <element signature="e#768#838#0" />
-            <element signature="e#870#958#0" />
-            <element signature="e#1147#1412#0" />
-            <element signature="e#1459#1732#0" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/across/app/templates/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="266" column="68" selection-start-line="266" selection-start-column="68" selection-end-line="266" selection-end-column="68" />
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/across/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
