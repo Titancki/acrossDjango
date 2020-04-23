@@ -3,87 +3,13 @@
 
 {% block content %}
 <style>
-    .body{
-        min-height: 500px;
-        padding-top: 20px;
-    }
-    h1{
-        color: #d7d7d7;
-        font-size: 24px;
-        font-family: 'Bebas Neue', cursive;
-        margin-top: 8px;
-    }
-
-    h2{
-        color: #000000;
-        font-size: 20px;
-        font-family: 'Bebas Neue', cursive;
-        padding: 3px;
-        margin: 0px;
-        width: 100%;
-        text-align: center;
-    }
-    .team{
-        margin-right: 11.8%;
-        margin-left: 11.8%;
-
-    }
-    .profil{
-        width: 140px;
-        border: 2px solid black;
-        background-color: #d7d7d7;
-        background: linear-gradient(110deg, #d7d7d7 60%, #A5AF9E 60%);
-        float: left;
-        margin-right: 2.5px;
-        margin-left: 2.5px;
-
-    }
-    hr{
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }
-
-
-    .profil > img{
-        margin-right: 30px;
-        margin-left: 30px;
-        margin-top: 10px;
-        width: 76px;
-        height: 76px;
-        border-radius: 50%;
-    }
-    .profil > p{
-        padding: 3px;
-        margin: 0px;
-    }
-    .profil > .networks{
-        margin: 3px;
-    }
-    .btn-custom{
-        color: #000000;
-        font-size: 24px;
-        font-family: 'Bebas Neue', cursive;
-        background-color: #A5AF9E;
-        width: 100%;
-        border-radius: 0px;
-        border: 2px solid; black
-    }
-    .btn-custom.collapsed{
-        background-color: #d7d7d7;
-        box-shadow: none;
-    }
-    .btn.focus, .btn:focus{
-        box-shadow: none;
-    }
     .col{
         padding: 0px;
     }
-    .games{
-        margin-top: 45px;
-    }
+
 </style>
 
-<div class="container body">
+<div class="body">
     <div class="row">
         <div class="col col-sm-2">
             <div class="games">
@@ -101,7 +27,7 @@
                 </a>
             </div>
         </div>
-        <div class="col col-sm-10">
+        <div class="col col-sm-10" style="padding: 0px">
             <div class="panel collapse" id="rlCollapse">
                 <div id="rlCarousel" class="carousel slide z-depth-1-half" data-ride="carousel" data-interval="false">
               <div class="carousel-inner">

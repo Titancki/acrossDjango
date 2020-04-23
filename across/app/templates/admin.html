@@ -2,63 +2,6 @@
 {% load static %}
 
 {% block content %}
-<style>
-    .body{
-        min-height: calc(100vh - 205px - 143.5px);
-        padding-top: 20px;
-        margin: 0px;
-        color: black;
-    }
-    h1{
-    color: #d7d7d7;
-    font-size: 24px;
-    font-family: 'Bebas Neue', cursive;
-    margin-top: 8px;
-    }
-
-    h2{
-        color: #000000;
-        font-size: 20px;
-        font-family: 'Bebas Neue', cursive;
-        padding: 3px;
-        margin: 0px;
-        width: 100%;
-        text-align: center;
-    }
-    .vertical-navbar{
-        min-height: calc(100vh - 205px - 143.5px);
-        background-color: #212a35;
-        border-right: 2px solid black;
-        margin-top: -20px;
-    }
-    .btn-nav{
-        color: #000;
-        background-color: rgba(255,255,255,0.6);
-        font-size: 24px;
-        font-family: 'Bebas Neue', cursive;
-        width: 100%;
-        border-radius: 0px;
-    }
-    .btn-nav.collapsed{
-        background-color: transparent;
-        box-shadow: none;
-    }
-    .btn.focus, .btn:focus{
-        box-shadow: none;
-    }
-    .btn-nav:hover{
-        backgroud-color: rgba(255,255,255,0.6);
-        color: #000;
-    }
-    .collapsing {
-        -webkit-transition: none;
-        transition: none;
-        display: none;
-    }
-    .table{
-        color: grey;
-    }
-</style>
 <div class="body row">
     <div class="vertical-navbar col-sm-2" style="padding: 0px; padding-top: 20px;">
         <a class="accordion btn btn-nav collapsed" type="button" data-toggle="collapse" href="#gameCollapse">
