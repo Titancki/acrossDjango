@@ -7,8 +7,15 @@ import datetime
 
 def index(request):
     lastMatchs = MatchHistory.objects.all().order_by('-date')[:5]
+    tmpemptyMatchs = 5 - lastMatchs.count()
+    emptyMatchs = ""
+    while tmpemptyMatchs > 0:
+        emptyMatchs = emptyMatchs + "."
+        tmpemptyMatchs = tmpemptyMatchs - 1
+
     context = {
-        "lastMatchs": lastMatchs
+        "lastMatchs": lastMatchs,
+        "emptyMatchs": emptyMatchs
     }
     return render(request, "index.html", context)
 def team(request):
