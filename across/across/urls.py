@@ -14,10 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import path, include
 from app import views
 
-
+handler404 = 'app.views.handler404'
 urlpatterns = [
     path('team/', views.team, name="team"),
     path('staff/', views.staff, name="staff"),
@@ -34,4 +36,4 @@ urlpatterns = [
     path('delete_match', views.delete_match, name="delete_match"),
     path('', views.index, name="index"),
     path('', include("social_django.urls", namespace="social")),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
