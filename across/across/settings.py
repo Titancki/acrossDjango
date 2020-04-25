@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'across.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'jango.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'across',
         'USER': 'hqfnclaztztjjt',
         'PASSWORD': 'd18mcese4ckd1v',
