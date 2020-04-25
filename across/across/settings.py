@@ -25,7 +25,7 @@ SECRET_KEY = 'rzas5oi6ons36@c5v295v9ewhp0&6#)9c5cj60yg8c-iqeefb%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['https://acrossesport.herokuapp.com/']
 
 
 # Application definition
@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'across.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'jango.db.backends.postgresql_psycopg2',
         'NAME': 'across',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST':'',
-        'PORT': '3306',
+        'USER': 'hqfnclaztztjjt',
+        'PASSWORD': 'd18mcese4ckd1v',
+        'HOST':'ec2-46-137-156-205.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
