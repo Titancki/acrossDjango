@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'across.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'across',
+        'NAME': 'd18mcese4ckd1v',
         'USER': 'hqfnclaztztjjt',
-        'PASSWORD': 'd18mcese4ckd1v',
+        'PASSWORD': '57695aedd561e8cd77ab5a5ade3d670250f5b0fc4d2044fe6a2de78d9833e972',
         'HOST':'ec2-46-137-156-205.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
